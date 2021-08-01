@@ -13,6 +13,8 @@ To generate the random inspirational quotes, I defined the ```get_quote()``` fun
 
 ### How to Run the Bot? 🏃‍♀️
 
+Due to security concerns, the bot's private key cannot be in the code, so to work, you need to replace the **TOKEN** in ```client.run('TOKEN')```.
+
 You can use these commands in the terminal to run the bot:
 
 On Windows:
