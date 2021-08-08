@@ -28,10 +28,10 @@ async def on_message(message):
 
   msg = message.content
 
-  if message.content.startswith('Hello'):
+  if message.content.startswith(lower('Hello')):
     await message.channel.send('Hello human! How are you?')
 
-  if msg.startswith('Inspire me'):
+  if msg.startswith(lower('Inspire me')):
     quote = get_quote()
     await message.channel.send(quote)
     
