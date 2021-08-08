@@ -17,10 +17,14 @@ Due to security concerns, the bot's private key cannot be in the code, so to wor
 You can use these commands in the terminal to run the bot:
 
 On Windows:
-``py -3 main.py``
+```sh
+py -3 main.py
+```
 
 On other systems:
-``python3 main.py``
+```sh
+python3 main.py
+```
 
 ---
 
