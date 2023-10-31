@@ -1,20 +1,20 @@
-![Discord Bot Banner](https://user-images.githubusercontent.com/57842220/127756437-a8f1f97d-d323-4fd1-b48c-39dfdbf7d067.png)
+# Pepper - The Motivational Discord Bot
 
-Pepper is a motivational bot that identifies words that characterize another person's sadness and responds with something **encouraging**... 😁
+Pepper is an uplifting bot designed to identify words that express sadness in another person and respond with words of encouragement. 😁
 
-Would you like to know how to talk to her? It's simple, see:
+## How to Interact with Pepper
 
 1. Start by saying ``Hello``. 👋
-1. If you are sad, try to say that you are ``Unhappy``, ``Sad`` or ``Angry``, and Pepper will motivate you. 🔼
-1. Finally, if you want an inspiring message, say ``Inspire me``. ✨
+1. If you're feeling sad, express your emotions by saying words like ``Unhappy``, ``Sad`` or ``Angry``, and Pepper will provide motivational responses. 🔼
+1. If you're in need of an inspiring message, simply say  ``Inspire me``. ✨
 
 ---
 
-### How to run the Bot? 🏃‍♀️
+### Running the Bot
 
-Due to security concerns, the bot's private key cannot be in the code, so to work, you need to replace the **TOKEN** in ``client.run('TOKEN')``.
+Due to security considerations, the bot's private key cannot be included in the code. To make Pepper work, you need to replace the 'TOKEN' in the code with your own bot token.
 
-You can use these commands in the terminal to run the bot:
+You can run the bot using the following commands in your terminal:
 
 On Windows:
 ```sh
@@ -28,11 +28,13 @@ python3 main.py
 
 ---
 
-### How was it developed? ⚙️
+### Development Details ⚙️
 
-To develop it I used the **discord.py** library. With it I created an instance of our user, as a ``Client``, what connects the code with Discord.
+Pepper was developed using the discord.py library. Here's a brief overview of how it works:
 
-After I used the decorator ``@client.event()`` to register an event. This is an asynchronous library, so things are done with callbacks. A callback is a function that is called when something else happens.
-> In this code, the ```on_ready()``` event is called when the bot is ready to start being used. So when the bot receives a message, the ``on_message()`` event is called.
+- An instance of the user, as a Client, is created to connect the code with Discord.
+- The decorator ```@client.event()``` is used to register events. Since this is an asynchronous library, events are handled through callbacks. Callbacks are functions that are called when certain events occur.
+- The ```on_ready()``` event is triggered when the bot is ready to be used. When the bot receives a message, the ```on_message()``` event is called.
+- To generate random inspirational quotes, the ```get_quote()``` function is defined. It uses the requests module to retrieve data from the Zen Quotes API.
 
-To generate the random inspirational quotes, I defined the ``get_quote()`` function. First, it uses the requests module to request data from the **Zen Quotes API**.
+Pepper is here to spread positivity and encouragement in your Discord conversations! 😊🌟
